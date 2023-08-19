@@ -11,8 +11,6 @@ app.use(cors());
 app.use(express.json());
 app.use(express.static("public"));
 
-app.get(('/health', (_req, res) => res.status(200)))
-
 app.use("/updates", updates);
 app.use("/countdown", countdown);
 
