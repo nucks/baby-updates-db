@@ -36,7 +36,7 @@ router.post("/text", async (req, res) => {
                 body: JSON.stringify({
                     phone: number,
                     message:
-                        "Exciting news! Kayla and Brennon are on their way to the hospital to welcome their new baby into the world.\nFollow along and get real-time updates by going to https://journieupdates.com/",
+                        "Exciting news! Katie and Cameron are on their way to the hospital to welcome their new baby into the world.\nFollow along and get real-time updates by going to https://capriupdates.nucks.co",
                     key: process.env.TEXT_API_SECRET,
                 }),
             })
