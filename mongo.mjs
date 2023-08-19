@@ -14,4 +14,4 @@ try {
     console.error(e);
 }
 
-export let db = conn.db(process.env.DB_NAME);
+export let db = conn.db('capri');
