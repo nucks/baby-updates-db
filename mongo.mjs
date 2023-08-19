@@ -7,11 +7,13 @@ const connectionString = process.env.DB_CONNECTION_STRING;
 
 const client = new MongoClient(connectionString);
 
-let conn;
+let db;
+
 try {
-    conn = await client.connect();
+    await client.connect();
+    db = client.db(process.env.DB_NAME);
 } catch (e) {
     console.error(e);
 }
 
-export let db = conn.db(process.env.DB_NAME);
+export { db };
