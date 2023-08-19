@@ -14,4 +14,4 @@ try {
     console.error(e);
 }
 
-export let db = conn.db("prod_updates");
+export let db = conn.db("admin");
