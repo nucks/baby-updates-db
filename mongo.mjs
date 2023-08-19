@@ -3,7 +3,7 @@ dotenv.config();
 
 import { MongoClient } from "mongodb";
 
-const connectionString = `mongodb+srv://brennuck:${process.env.MONGODB_PASSWORD}@journiedb.epkam7m.mongodb.net/?retryWrites=true&w=majority`;
+const connectionString = process.env.CONNECTION_STRING;
 
 const client = new MongoClient(connectionString);
 
